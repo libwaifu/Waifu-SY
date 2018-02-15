@@ -1,0 +1,3 @@
+[submodule "models/Tableaux/raw/chinese-poetry-zhCN"]
+	path = models/Tableaux/raw/chinese-poetry-zhCN
+	url = https://github.com/chinese-poetry/chinese-poetry-zhCN
