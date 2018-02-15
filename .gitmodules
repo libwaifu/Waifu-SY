@@ -1,3 +1,6 @@
 [submodule "models/Tableaux/raw/chinese-poetry-zhCN"]
 	path = models/Tableaux/raw/chinese-poetry-zhCN
 	url = https://github.com/chinese-poetry/chinese-poetry-zhCN
+[submodule "models/RNN/raw/poet"]
+	path = models/RNN/raw/poet
+	url = https://github.com/norybaby/poet
