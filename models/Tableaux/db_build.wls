@@ -1,5 +1,6 @@
 #!/usr/bin/env wolframscript
-Part1:=Quiet@Block[
+time = AbsoluteTime[];
+Quiet@Block[
 	{path,valueQ,filelist,imp,paras,compress,save},
 	path=FileNameJoin@{NotebookDirectory[],"raw","chinese-poetry-zhCN","poetry"};
 	valueQ=Total[ToExpression[StringSplit[#,"."][[{-3,-2}]]]/.{tang->-10!,song->10!}]&;
@@ -12,3 +13,4 @@ Part1:=Quiet@Block[
 	save=OpenWrite["Tableaux_A.data", BinaryFormat->True];
 	BinaryWrite[save,compress];Close[save];
 ];
+Echo[AbsoluteTime[] - time, "time: "]
