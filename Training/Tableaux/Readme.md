@@ -21,7 +21,7 @@
 
 ##### In: 
 ```mathematica
-UtahimeTableaux[7,"苟利国家"]//TableForm
+Tableaux[7,"苟利国家"]//TableForm
 ```
 
 ##### Out:
