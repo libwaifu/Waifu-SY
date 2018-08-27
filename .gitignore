@@ -1,19 +1,10 @@
-# yarn
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# idea 配置文件
+*.iml
+.idea/*
 
 # Build Temp
 Thumbs.db
 .DS_Store
-docs/.build/
-docs/.vuepress/public/
-*.csv
-
-# idea 配置文件
-*.iml
-.idea/*
 
 # 模型文件
 *.7z
@@ -22,3 +13,8 @@ docs/.vuepress/public/
 *.wxf
 *.wlnet
 *.onnx
+
+# 可交换格式
+*.json
+*.txt
+*.csv
