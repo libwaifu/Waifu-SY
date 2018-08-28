@@ -6,6 +6,11 @@
 Thumbs.db
 .DS_Store
 
+# 图片
+*.jpg
+*.jpeg
+*.png
+
 # 模型文件
 *.7z
 *.rar
