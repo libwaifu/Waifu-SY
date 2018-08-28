@@ -22,7 +22,9 @@
 (*这里应该填这个函数的介绍*)
 (* ::Section:: *)
 (*函数说明*)
-ExampleFunction::usage = "这里应该填这个函数的说明,如果要换行用\"\\r\"\r就像这样";
+Tang7::usage = "";
+Tang7Line::usage = "";
+Tang7LineRandom::usage = "";
 (* ::Section:: *)
 (*程序包正体*)
 (* ::Subsection::Closed:: *)
@@ -47,7 +49,7 @@ Tang7LineRandom[in_List] := TableForm[Text@*Tang7LineRandom /@ in];
 Tang7LineRandom[char_String] := Block[
 	{state, next, head, top},
 	If[StringLength@char >= 8, Return[]];
-	state = NetStateObject[net];
+	state = NetStateObject[WaifuTang7];
 	next[str_, r_ : 50] := (
 		top = Association @@ state[str, {"TopProbabilities", r}];
 		top = KeyDrop[top, Characters["，。？兮" <> StringTake[str, -1]]];
@@ -56,7 +58,7 @@ Tang7LineRandom[char_String] := Block[
 	head = Nest[next[#, 5$TangShiComplex]&, char, 7 - StringLength@char];
 	Nest[next[#, $TangShiComplex]&, head <> "，", 7] <> "。"
 ];
-Options[Tang7] = {Line -> 8};
+Options[Tang7] = {Line -> 8, Riffle -> True};
 Tang7[char_, OptionsPattern[]] := Block[
 	{next, shi, line},
 	line = OptionValue[Line];
