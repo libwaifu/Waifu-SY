@@ -15,7 +15,7 @@
 #### 函数: 
 
 > UtahimeTableaux[long,str]
->> long 表示所有诗词的长度\
+>> long 表示所有诗词的长度
 >> str 表示需要的藏头诗词
 
 

@@ -13,13 +13,15 @@ Thumbs.db
 
 # 模型文件
 *.7z
+*.mx
 *.rar
 *.zip
 *.wxf
 *.wlnet
-*.onnx
+Training/*/*.wmlf
 
 # 可交换格式
 *.json
 *.txt
 *.csv
+*.onnx
