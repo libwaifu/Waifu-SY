@@ -18,6 +18,7 @@ Thumbs.db
 *.zip
 *.wxf
 *.wlnet
+*.app
 Training/*/*.wmlf
 
 # 可交换格式
